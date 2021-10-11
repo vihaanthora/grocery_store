@@ -2,7 +2,7 @@ from django.db import models
 
 class Item(models.Model):
     code = models.CharField("item code", max_length=16, primary_key=True)
-    name = models.CharField("item name", max_length=64)
+    name = models.CharField("item name", max_length=64, unique=True)
     category = models.CharField(max_length=64)
     price = models.IntegerField("item price")
     quantity_available = models.IntegerField("quantity available")
