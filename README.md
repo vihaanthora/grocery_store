@@ -14,11 +14,13 @@ After cloning the repository in your code editor, type the following commands in
 1. $ cd GroceryStore
 2. $ python manage.py makemigrations
 3. $ python manage.py migrate
-4. $ python manage.py runserver
+4. $ python manage.py runserver     
+   
 After this, the server should be successfully running on your local machine.
 ## Admin Access
 To create a super user, i.e., to have admin rights provided by Django, you can run the following command:
-$ python manage.py createsuperuser
-When prompted, enter a username and a password for Django admin page. The admin can be accessed by clicking the URL http://localhost:8000/admin/. Here, you can enter the credentials that were entered before while creating superuser. After logging in successfully, you have a dashboard showing you all the admin rights provided by Django in this project. 
+1. $ python manage.py createsuperuser   
+         
+When prompted, enter a username and a password for Django admin page. The admin can be accessed by clicking the URL http://localhost:8000/admin/. Here, you can enter the credentials that were entered before while creating the superuser. After logging in successfully, you will have a dashboard showing you all the admin rights provided by Django in this project. 
 ## API Documentation
 For using the different features offered by the API, you can simply go to the URLs present in the documentation of the API, which can be seen by opening https://documenter.getpostman.com/view/17859944/UV5RnfnY
