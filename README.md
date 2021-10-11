@@ -7,7 +7,7 @@ This project consists of a rest API that is designed to simluate the working of 
 ## Assumptions
 1. Every item present in the grocery store has a unique code, i.e., no two distinct items have the same code in the system. Hence, the item code is used as primary key in the items table. This code can be a barcode or any other coding convention followed by the store such as category code followed by a serial number, etc.
 2. Every user is identified by his/her phone number. This is a valid assumption as this system is followed by major retail giants all over the world. Hence, the phone number is used as a primary key in the users table.
-3. The sales table has id as a primary key which is added by the system to uniquely identify each and every transaction.
+3. The sales table has id as a primary key and which is added by the system to uniquely identify each and every transaction. Every time a sale get recorded, the system also automatically adds a timestamp to it. 
 ## ER Diagram
 https://drawsql.app/personal-284/diagrams/grocery-store#
 ## Instructions
